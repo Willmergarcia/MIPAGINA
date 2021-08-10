@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link type="text/css" rel="stylesheet" href="/styles/estilos.css" />
+    <title>Formulario Web</title>
+
+  </head>
+  <body>
+
+    <div class="imagen">
+      <img src="images\HTML5.png" />
+    </div>
+    <div class="encabezado1">
+      <h1>Desarrollo Web</h1>
+      <h2>Introduccion a html</h2>
+    </div>
+
+    <header class="navegacion">
+
+      <nav class="navbar">
+        <div class="conter_menu">
+          <a href="inicio.html" id="enlaces-inicio" class="btn-header"
+            >Inicio</a
+          >
+          <a href="elementos.html" id="enlaces.elementos" class="btn-header"
+            >Elementos</a
+          >
+          <a
+          href="formulario.html"
+          id="enlaces-opiniones"
+          class="btn-header"
+          >Opiniones</a>
+          <a
+            href="Funcionamiento.html"
+            id="enlaces-atributos"
+            class="btn-header"
+            >Funcionamiento</a
+          >
+        </div>
+      </nav>
+      <h1>Opiniones de nuestros usarios</h1>
+    </header>
+    <form action="">
+      <fieldset>
+        <legend>Resgistro de la opinion</legend>
+        <div class="row2cols">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="nombre complesto"
+          />
+        </div>
+        <div class="row2cols">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="solo direcciones validaas"
+          />
+        </div>
+        <div class="row2cols">
+          <label for="mensaje">Opiniones</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            rows="10"
+            required
+            minlength="25"
+          >
+          </textarea>
+        </div>
+
+        <div class="row2cols">
+          <div></div>
+          <div>
+            <input type="submit" value="Guardar" />
+            <input type="reset" value="Limpiar controles" />
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.body{
+    font-family: 'Raleway', sans-serif;
+    background-color: blue;
+}
+.encabezado1{
+
+  
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    
+
+}
+.imagen{
+    padding: 0px;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 960px;
+    
+}
+
+h1, h2,h3{
+
+    align-items:  center;
+    display: flex;
+    color: black;
+    justify-content: center;
+    
+}
+
+.contenedor{
+    width: 1400px;
+    min-height: 800px;
+    background: yellowgreen;
+    margin: 10px;
+    box-shadow: 1px 1px 10px #000;
+    
+
+}
+.texto{
+    color:rgb(10, 19, 2);
+    font-size: 25px;
+    text-align: auto;
+    margin-bottom: 10px;
+
+}
+.texto p{
+    text-align: left;
+    
+}
+
+
+.navegacion{
+  
+    background: yellow;
+    position: sticky;
+    text-align: center;
+    top: 0%;
+}
+.navbar, a{
+    
+    color: aliceblue;
+    display: inline-block;
+    padding: 20px;
+ 
+    text-align: center;
+    color: black;
+    transition: .3s ease-in-out all;
+}
+.navbar a:hover{
+    background: red;
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+aside{
+   
+    width: 350px;
+    min-height: 200px;
+    margin: 10px;
+    background-color: chartreuse;
+    float: right ;
+    box-shadow: 1px 1px 10px #000;
+    
+
+
+}
+footer{
+    background-color: chartreuse;
+    text-align: center;
+
+}
+.principal{
+   
+    background-color: yellow;
+}
+
+
+.row2cols{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+.row2cols label{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.row2cols input,
+.row2cols textarea{
+    background-color: azure;
+}
+input[type="submit"]{
+    background-color: darkgreen;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+input[type="reset"]{
+    background-color: orange;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+@media screen and (max-width:975px) {
+    .row2cols{
+        grid-template-columns: 1fr;
+
+    }
+
+    .row2cols label{
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .row2cols{
+        grid-template-columns: 1fr;
+    }
+
+    .row2cols label{
+    text-align: center;
+}
+}
